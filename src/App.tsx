@@ -49,7 +49,7 @@ function App() {
 		type: "joker" | "user"
 	) => {
 		const message: Message = {
-			content,
+			content: content.trim(),
 			type,
 		};
 		if (!message.content) return;
